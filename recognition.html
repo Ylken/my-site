@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ZooTopia - Распознавание животного</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Главная навигация с логотипом, который будет вести на главную страницу -->
+    <header>
+        <a href="index.html" class="logo-link">
+            <h1 class="logo-text">ZooTopia</h1>
+        </a>
+
+    </header>
+
+    <section id="work-section">
+        <center><h2>Загрузите изображение для распознавания</h2></center>
+        <div class="upload-section">
+            <input type="file" id="fileInput" accept="image/*" onchange="displayImage(event)">
+            <button onclick="recognizeAnimal()">Запуск</button>
+            <div class="image-display" id="imageDisplay"></div>
+            <div id="result">Здесь появится результат</div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
